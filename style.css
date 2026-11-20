@@ -1,0 +1,12 @@
+  h1,h2{
+         color: red;
+         background-color: black;
+       }
+
+  a{
+        text-decoration: none;
+        color:red;
+       }
+     h1 a{
+        color:white;
+     }

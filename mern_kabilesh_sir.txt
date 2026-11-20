@@ -1,0 +1,149 @@
+
+MERN
+M=> Mongodb
+E=> ExpressJS
+R=> React
+N=> Nodejs
+     
+        req
+client <=> server
+        res 
+
+traditional => spring,hiberate,php,jsp
+     two tier architecture
+            PHP(integrated with html)
+three tier architecture
+       frontend,backend server,backend database
+
+users <-> client <-> UI <-> server <-> db
+          browser   
+          mobile
+
+
+mobile
+             server       
+web
+
+
+	UI <-> server <-> Framework	<-> db
+       HTML	nodejs	  expressjs  	mongodb
+	CSS	python	  FastAPI	MySQL
+	JS	java	  Springboot 	oracle
+		          		mariadb
+framework
+nodejs=> programming language
+expressjs => framework
+
+python => programming language
+framework => flask,django,FastAPI
+
+java
+framework =>springboot
+
+
+MEAN => Angular => framework
+React => library
+
+React <-> nodejs <-> ExpressJs<-> mongodb
+React <-> python <-> FastAPI<-> mongodb
+
+React,Angular => SPA(Single page Application)
+              => it will render the page
+
+nodejs
+https://nodejs.org/en/download
+
+postman
+http://postman.com/downloads/
+
+basics of html,css(Bootstrap)
+
+Basics of javascript
+    -DOM
+nodejs basics
+nodejs modules & export
+creating a server in nodejs
+
+expressJS
+  -basic server creation
+  -Creating REST API
+  - Mongodb queries(join,aggregate function)
+  -connecting with backend(database)
+  -security
+
+ReactJS
+   -overview and folder structure
+   -components
+   -Routing and navigation
+   -connecting with backend
+
+
+
+
+
+
+    
+
+
+
+
+basics of html,css(Bootstrap)
+
+  -meta => giving addition info and keywords for the website
+
+syntax:
+
+<html>
+  <head>
+     --external files(css,js)
+     --titles
+     --meta tags
+  </head>
+  <body>
+   ---page content
+  </body>
+  //internal script
+  <script>
+
+  </script>
+  
+</html>
+
+
+
+
+SEO => Search engine optimization
+
+
+menu bar
+
+header_component
+
+
+
+
+
+css
+
+inline  => within the tag
+internal => within the page
+external => outside the page as external file
+
+
+if predefined tags no need to mention anything for css names
+
+if userdefined functions then we have represent with either class(.) or id(#)
+
+
+mybox=> either . or #
+
+
+
+
+
+
+
+
+
+
+
