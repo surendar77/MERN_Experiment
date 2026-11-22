@@ -1,0 +1,23 @@
+<html>
+    <body>
+
+        <button id="btn1">hide</button>
+        <button id="btn2">show</button>
+        <div id="mybox" style="display: none;">
+         <p>first content</p>
+         <p>second content</p>
+        </div>
+
+        <script>
+           document.getElementById("btn2").addEventListener("click",function(){
+                document.getElementById("mybox").style.display="block";
+           });
+
+           document.getElementById("btn1").addEventListener("click",function(){
+             document.getElementById("mybox").style.display="none";
+           });
+
+
+        </script>
+    </body>
+</html>

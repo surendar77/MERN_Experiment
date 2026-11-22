@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <button id="minus">-</button>
+       <input type="text" id="quan" value="1">
+       <button id="plus">+</button>
+       <p id="price">100</p>
+        <script>
+          var quan=parseInt(document.getElementById("quan").value);
+          var price=document.getElementById("price");
+          document.getElementById("plus").addEventListener("click",function(){
+               quan++;
+               document.getElementById("quan").value=quan;
+               price.innerHTML=quan*100
+          })
+          document.getElementById("minus").addEventListener("click",function(){
+            if(quan>1){
+               quan--;
+               document.getElementById("quan").value=quan;
+               price.innerHTML=quan*100
+            }
+          })
+          
+ 
+
+        </script>
+    </body>
+</html>

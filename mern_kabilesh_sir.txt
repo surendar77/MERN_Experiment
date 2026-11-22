@@ -252,6 +252,126 @@ mybox=> either . or #
 
 
 
+Javascript
+  -client side scripting(browser side actions)
+        -javascript or jquery
+  -server side scripting(communicating with server & db)
+        -nodejs,expressjs
+
+internal
+ <script>
+
+ </script>
+external
+
+event handling
+  button(onclick)
+  textbox(onchange)
+ ...
+
+
+
+
+
+
+
+areaofcyclinder
+
+
+1.pascal case
+    AreaOfCylinder(file,class,expection,package)
+2.camel case
+    areaOfCylinder(function or method)
+3.snake case
+    area_of_cylinder(variable)
+
+<html>
+    <head>
+        <style>
+        p{
+            color:red;
+        }
+        </style>
+            </head>
+    <body>
+         <input type="text" id="password" placeholder="Enter password">
+         <div id="conditions" style="display:none;">
+            <p id="countcheck">minimum 8 characters</p>
+            <p id="uppercheck">one uppercase</p>
+            <p id="lowercheck">one lowercase</p>
+            <p id="numcheck">one number</p>
+         </div>
+        <script>
+             document.getElementById("password").addEventListener("input",function(){
+            let password=document.getElementById("password").value
+             if(password.length>=1){
+              document.getElementById("conditions").style.display="block";
+              //password length condition
+              if(password.length>=8){
+                document.getElementById("countcheck").style.color="green";
+              }else{
+                document.getElementById("countcheck").style.color="red";
+              }
+              //one upper case condition
+              if(/[A-Z]/.test(password)){
+                 document.getElementById("uppercheck").style.color="green";
+              }else{
+                document.getElementById("uppercheck").style.color="red";
+              }
+               //one upper case condition
+              if(/[a-z]/.test(password)){
+                 document.getElementById("lowercheck").style.color="green";
+              }else{
+                document.getElementById("lowercheck").style.color="red";
+              }
+               //one number condition
+              if(/[0-9]/.test(password)){
+                 document.getElementById("numcheck").style.color="green";
+              }else{
+                document.getElementById("numcheck").style.color="red";
+              }
+
+
+
+             }
+             else{
+                document.getElementById("conditions").style.display="none";
+             }
+          
+             })
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
