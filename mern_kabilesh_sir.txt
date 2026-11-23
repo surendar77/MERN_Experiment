@@ -355,6 +355,72 @@ areaofcyclinder
 
 
 
+pan card
+
+ABCDE1234F
+
+/[A-Z]/ => single condition
+
+multiple condition
+
+/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/
+
+
+
+
+arrow function(=>)
+
+function addition(a,b){
+return a+b;
+}
+
+let val=addition(a,b)
+
+
+//arrow function
+
+ funname = (parameters)=>{statement of function}   
+
+  let addition = (a,b)=>{return a+b}
+
+
+
+
+
+
+
+bootstrap 
+   -its a framework to make UI attractive,responsive for html,css,js, icons
+   -used to develop UI fast and easy
+
+
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

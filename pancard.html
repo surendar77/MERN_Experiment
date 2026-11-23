@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="pan" placeholder="Enter your pan">
+        <p id="result"></p>
+        <script>
+          let pan=document.getElementById("pan");
+          pan.addEventListener("input",function(){
+            console.log(pan.value)
+            let value=pan.value.toUpperCase();
+            pan.value=value;
+            let pattern=/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+            if(pattern.test(value)){
+                document.getElementById("result").innerHTML="Valid pan card";
+                document.getElementById("result").style.color="green";
+            }else{
+                document.getElementById("result").innerHTML="Invalid pan card";
+                document.getElementById("result").style.color="red";
+            }
+          })
+        </script>
+    </body>
+</html>
