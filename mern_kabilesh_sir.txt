@@ -431,6 +431,25 @@ footer(split by four portions) address,important_links,social icon
 
 
 
+icons cdn link
+
+https://icons.getbootstrap.com/
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+
+
+
+
+
+<i class="bi bi-instagram"></i>
+
+<i class="bi bi-linkedin"></i>
+
+
+
+
 
 
 
