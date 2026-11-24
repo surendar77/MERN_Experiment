@@ -398,6 +398,44 @@ https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 
 
+in browsers
+git for windows 
+
+
+
+
+container -overall box
+
+grid
+  row -> 12 points
+  col -> split 12 points into cols
+
+
+
+
+
+
+
+
+
+
+
+
+
+menu
+slider(images)
+split by two portions (youtube video, map)
+footer(split by four portions) address,important_links,social icon
+
+
+
+
+
+
+
+
+
+
 
 
 
