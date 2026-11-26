@@ -456,6 +456,110 @@ https://icons.getbootstrap.com/
 
 
 
+Jquery
+   => javascript query
+   => predefined javascript libaray
+   => it is used to customize javascript code(DOM,AJAX,event handling,animations)
+
+
+<p id="demo">hai</p>
+<p id="demo1">hello</p>
+
+javascript
+
+document.getElementByID("demo").innerHTML="hello"
+document.getElementByID("demo1").innerHTML="hello"
+
+jquery
+document.getElementBy=> $
+$("#demo").html("hello")
+
+
+https://releases.jquery.com/
+
+
+current version
+click
+script => minified
+
+
+
+
+
+
+
+
+
+
+
+
+jquery even related methods
+click() => mouse click
+dblclick() => double click
+mouseenter()
+mouseleave()
+keyup() => keyboard key released
+keydown() => keyboard key pressed
+change() => input value change
+submit() => form submitted
+focus() => input receives focus
+blur() => input loses focus
+
+jquery methods
+
+html() => get or set HTML
+
+  $("#demo").html()
+text() => get or set text
+val() =>get or set input value
+css() => change css
+addClass() => add css class
+removeClass() => remove css class
+append() =>Add content to the end
+remove() => remove element
+hide()
+show()
+
+
+ $("#btn1").click(function(){
+                let data=$("#demo").html();
+                console.log(data)
+              })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

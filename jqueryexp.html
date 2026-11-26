@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+        <script src="https://code.jquery.com/jquery-4.1.0.min.js" integrity="sha256-hjRvPkFLO1JGZFMXGrzdpG6TlsHDyjp4PQeqLWRcMzk=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <p id="demo">hai</p>
+        <button id="btn1">Click</button>
+        
+        <script>
+
+            // document.getElementById("btn1").addEventListener("click",function(){
+            //     document.getElementById("demo").innerHTML="hello"
+            // })
+
+              //set the html component value
+              $("#btn1").click(function(){
+                $("#demo").html("hello");
+              })
+              //fetch the html component value
+               $("#btn1").click(function(){
+                let data=$("#demo").html();
+                console.log(data)
+              })
+
+
+        </script>
+    </body>
+</html>

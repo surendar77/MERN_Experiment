@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-4.1.0.min.js" integrity="sha256-hjRvPkFLO1JGZFMXGrzdpG6TlsHDyjp4PQeqLWRcMzk=" crossorigin="anonymous"></script>
+    <style>
+        .highlighted{
+            color:red;
+            background-color: yellow;
+            font-size:25;
+        }
+    </style>
+    </head>
+    <body>
+<!-- Exercise1 -->
+      <p class="demo">first</p>
+      <p class="demo">second</p>
+      <p class="demo">third</p>
+      <button id="clickevent">color change</button>
+
+<!-- Exercise2 -->
+      <div class="mybox">
+        <p class="demo">first</p>
+        <p class="demo">second</p>
+         <p class="demo">third</p>
+      </div>
+      <button id="addcss">Change css</button>
+
+        <script>
+            $("#clickevent").click(()=>{
+                $(".demo").css("color","red")
+            });
+
+            $("#addcss").click(()=>{
+                $(".mybox").addClass("highlighted")
+            })
+
+
+        </script>
+    </body>
+</html>
