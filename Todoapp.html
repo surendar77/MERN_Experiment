@@ -8,7 +8,6 @@
        <div class="container mt-5">
            <h2 class="text-center mb-4">Todo Application</h2>
             <!-- ADD task components start -->
-      
            <div class="card shadow p-4">
             <div class="input-group">
                 <input type="text" id="task"
@@ -87,13 +86,94 @@
                      $("#message").html(
                     `<span class="text-success">Task added successfully</span>`
                      );
+                }else{
+                    //update query
+                    tasks[addIndex].name=task;
+                    addIndex=-1
+                    $("#addtask").text("Add");
+                    $("#message").html(
+                    `<span class="text-success">Task updated successfully</span>`
+                     );
                 }
                 $("#task").val("");
+    
 
-
-                
+                displayTasks();
 
                 })
+
+             function displayTasks(){
+             
+                $("#tasklist").empty();
+               let searchval=$("#search").val().toLowerCase();
+                $.each(tasks,function(index,task){
+
+                if(task.name.toLowerCase().includes(searchval)){
+
+                let item=$("<li>").addClass("list-group-item d-flex justify-content-between align-items-center");
+                let taskName=$("<span>").text(task.name);
+                
+                if(task.status){
+                    taskName.addClass("text-decoration-line-through");
+                }
+                let actions=$("<div>")
+
+                let completebtn=$("<button>").addClass("btn btn-success btn-sm me-2")
+                    .text(task.status?"undo":"complete").on("click",function(){
+                        tasks[index].status=!tasks[index].status;
+                        displayTasks();
+                    });
+
+
+                let editbtn=$("<button>").addClass("btn btn-warning btn-sm me-2")
+                    .text("Edit").on("click",function(){
+                        $("#task").val(task.name);
+                        addIndex=index;
+                        $("#addtask").text("update task")
+                    });
+
+
+                let deletbtn=$("<button>").addClass("btn btn-danger btn-sm")
+                    .text("Delete").on("click",function(){
+                        if(confirm("Delete this task")){
+                            tasks.splice(index,1);
+                            displayTasks();
+                        }
+                    });
+
+
+                actions.append(completebtn,editbtn,deletbtn);
+                item.append(taskName,actions);
+                $("#tasklist").append(item)
+
+                }
+               });
+
+               updatecounts();
+
+             }
+             //update counts
+             function updatecounts(){
+                let total=tasks.length;
+                $("#total").text(total);
+                let completed=tasks.filter(task=>task.status==true).length;
+                $("#completed").text(completed);
+                let pending=total-completed;
+                $("#pending").text(pending);
+             }
+             $("#search").on("input",function(){
+                displayTasks();
+             })
+
+             //enter key
+             $("#task").on("keypress",function(e){
+                if(e.which==13){
+                    $("#addtask").click();
+                }
+             })
+
+
+
             })
 
         </script>
