@@ -1,0 +1,51 @@
+<html>
+    <head>
+       
+<script src="https://code.jquery.com/jquery-4.1.0.min.js" integrity="sha256-hjRvPkFLO1JGZFMXGrzdpG6TlsHDyjp4PQeqLWRcMzk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./bootstrap-5.3.9-dist/bootstrap-5.3.9-dist/css/bootstrap.min.css" type="text/css">
+
+    </head>
+    <body>
+
+<button id="loaddata" class="btn btn-primary">fetch json data</button>
+<div id="result" class="mt-4"></div>
+
+        <script>
+
+$(document).ready(()=>{
+    $("#loaddata").click(()=>{
+        // $.getJSON("https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json",function(data){
+        //     console.log(data);
+        
+        //     $.each(data,function(index,user){
+        //         let card=$("<div>").addClass("card shadow p-3 mb-2");
+        //         let name=$("<h3>").text(user.name);
+        //         let language=$("<h5>").text(user.language);
+        //         let bio=$("<p>").text(user.bio);
+        //         //one particular user
+        //         card.append(name,language,bio);
+        //         // include each user in the list
+        //         $("#result").append(card);
+        //     })
+        // })
+
+   $.ajax({
+         url:"https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json",
+         type:"GET",
+         success:function(response){
+            console.log(response)
+         },
+         error:function(error){
+            console.log(error)
+         },
+         complete:function(){
+             console.log("request completed")
+         }
+   })
+
+
+    })
+})
+        </script>
+    </body>
+</html>

@@ -534,6 +534,36 @@ show()
 
 
 
+28/11/2026
+
+AJAX
+  -Async javascript and XML
+
+Async => non-blocking code
+  -await
+sync  => blocking code
+
+first task-2sec
+sec task -3sec
+third task-50sec
+fourth-1sec
+
+first task
+fourth
+sec
+third
+
+http req methods
+  -get,post,put,patch,delete
+
+http status code
+200
+
+
+
+
+
+
 
 
 
